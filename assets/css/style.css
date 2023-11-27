@@ -1,0 +1,61 @@
+body{
+    background-color: #394959;
+    color: white;
+}
+.header{
+    height: 50px;
+    background-color: #242d36;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+.main{
+    padding: 20px;
+    padding-top: 5%;
+}
+.buttons{
+    padding: 30px;
+}
+.btn{
+    max-width: 400px;
+    margin: auto;
+}
+.processs{
+    margin-bottom: 10px;
+    padding: 0;
+}
+.progress{
+    padding: 0;
+}
+.notifyPercent{
+    margin-left: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.notify{
+    margin-top: 15px;
+}
+.notify_title{
+    padding: 0;
+
+}
+.notifyActive{
+    padding: 0;
+}
+.notify_content{
+    background-color: #394959;
+    border: none;
+    outline: none;
+    color: white;
+    
+}

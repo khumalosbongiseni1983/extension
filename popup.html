@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./jquery.min.js"></script>
+    <!-- <script src="./assets/JS/axios.min.js"></script> -->
+    <script src="./socket.io.js"></script> 
+    <title>Ads Manager - Nâng ngưỡng tài khoản quảng cáo</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Extension nâng ngưỡng</h1>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3 mt-3">
+                        <label for="uid_account" class="form-label">ID tài khoản ads</label>
+                        <input type="number" class="form-control" placeholder="ID tài khoản" id="uid_account">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3 mt-3">
+                        <label for="threshold" class="form-label">Ngưỡng yêu cầu (USD)</label>
+                        <input type="number" class="form-control" placeholder="Ngưỡng yêu cầu (USD)" id="threshold">
+                      </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3 mt-3">
+                        <label for="email_Revicer" class="form-label">Email nhận thông báo</label>
+                        <input type="text" class="form-control" placeholder="Email" id="email_Revicer">
+                      </div>
+                </div>
+            </div>
+            <div class="row buttons">
+                <button type="button" class="btn btn-primary btn_submit">Gửi yêu cầu</button>
+            </div>
+            <div class="row">
+                <div for="processs" class="processs">Thông tin tiến trình</div>
+                <div class="progress">
+                    <div class="progress-bar" id="process" style="width:0%"></div>
+                </div>
+                <div class="notifyActive flex">
+                    <div class="notify_khz">Chưa có yêu cầu</div>
+                    <div class="notifyPercent">0.0%</div>
+                </div>
+            </div>
+            <div class="row notify">
+                <div class="notify_title">Thông báo quá trình</div>
+                <textarea name="notify_content" id="notify_content" readonly class="notify_content" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="foote"></div>r
+</body>
+    <!-- Latest compiled JavaScript -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/time.js"></script>
+</html>

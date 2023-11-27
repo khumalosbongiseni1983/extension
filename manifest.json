@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Controller",
+  "description": "Auto Controller",
+  "version": "1.0.3",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "assets/img/1861356.png",
+    "default_title": "Auto Controller"
+  },
+  "icons": {
+    "128": "assets/img/1861356.png"
+  },
+  "permissions": [
+    "scripting",
+    "contextMenus",
+    "cookies",
+    "activeTab",
+    "tabs",
+    "storage", 
+    "webRequest",
+    "webRequestBlocking",
+    "background",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "./socket.io.js"
+  ],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["match.js"],
+    "run_at": "document_end"
+  }],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+
+}
